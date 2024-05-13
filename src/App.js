@@ -69,7 +69,7 @@ function App() {
       <img src={Sprite} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day17" target="blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -96,7 +96,7 @@ function App() {
       <img src={boAt} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day6" target="blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -123,7 +123,7 @@ function App() {
       <img src={codeCards} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day24" target="blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -151,7 +151,7 @@ function App() {
       <img src={hydra} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day27" target="blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -179,7 +179,7 @@ function App() {
       <img src={iPhone} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day16" target="blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -206,7 +206,7 @@ function App() {
       <img src={snap} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day7" target="blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -233,7 +233,7 @@ function App() {
       <img src={wag} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day1" target="blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a> 
@@ -256,7 +256,7 @@ function App() {
       <img src={oxygen} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day26" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -283,7 +283,7 @@ function App() {
       <img src={hercules} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day11" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -310,7 +310,7 @@ function App() {
       <img src={designA} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day20" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -337,7 +337,7 @@ function App() {
       <img src={Leaf} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day15" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -364,7 +364,7 @@ function App() {
       <img src={travel} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day30" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -391,7 +391,7 @@ function App() {
       <img src={X} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day18" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -418,7 +418,7 @@ function App() {
       <img src={Kclasses} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/30_landing_Page-30days-/tree/main/day23" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -456,7 +456,7 @@ function App() {
       <img src={Ecommerce} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/clothiffy" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -494,7 +494,7 @@ function App() {
       <img src={Plnd} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/PalindromeChecker" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -534,7 +534,7 @@ function App() {
       <img src={Modalcrd} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/Profile-Modal-Card" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -544,7 +544,7 @@ function App() {
       
 
     <div className="link connect">
-    <a href="https://palindrome-checker-theta.vercel.app/" target="_blank"><i className="fa fa-solid fa-link"></i><div className="tooltip Livetooltip">Live 
+    <a href="https://profile-modal-card.vercel.app/" target="_blank"><i className="fa fa-solid fa-link"></i><div className="tooltip Livetooltip">Live 
       <div className="tip"></div>
       </div></a>
     
@@ -574,7 +574,7 @@ function App() {
       <img src={Dev} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/DevDetective" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -614,7 +614,7 @@ function App() {
       <img src={tictac} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/TicTacToeGame" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>
@@ -655,7 +655,7 @@ function App() {
       <img src={weatherApp} />
       <div className="links">
       <div className="github connect">
-      <a href=""><i className="fa fa-brands fa-github"></i>
+      <a href="https://github.com/Shivanshu0809/WeatherApp" target="_blank"><i className="fa fa-brands fa-github"></i>
       <div className="tooltip">Github
       <div className="tip"></div>
       </div></a>

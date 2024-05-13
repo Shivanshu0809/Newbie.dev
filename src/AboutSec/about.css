@@ -112,11 +112,16 @@ transition: all 1s ease-in-out;
 }
 }
 @media(max-width:426px){
+    .Modal{
+        backdrop-filter: blur(2px);
+    }
     .ownerModal{
         width: 75%;
         padding: .5rem;
+        padding-bottom: .8rem;
         top: 10%;
         left: 48%;
+        background-color: #111;
     }
     .Modal>h3{
         font-size: .8rem;

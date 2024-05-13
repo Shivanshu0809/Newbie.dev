@@ -134,7 +134,7 @@ margin-top: 5%;
 }
 
 .CardTooltip{
-  /* width: 70px; */
+  /* width: 50%; */
   padding: 0.1rem .5rem;
   background-color: #30960f;
   height: 30px;
@@ -648,6 +648,7 @@ align-items: center;
   .LftPrtNav>h2{
     font-size: 1.6rem;
   }
+ 
   .HeroHeading>h1{
     font-size: 1.5rem;
   }
@@ -657,7 +658,15 @@ align-items: center;
   .card{
     width: 100%;
     height: 100%;
+    padding-top: .5rem;
+    padding-bottom: .2rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
   }
+  .card>img{
+    border-radius: 5px;
+  }
+
   .sec2{
     padding: 0rem 2rem;
     gap: 80px;
@@ -691,6 +700,9 @@ align-items: center;
   }
   .eryttool{
     display: none;
+  }
+  .CardTooltip{
+    width: 50%;
   }
   .CardTooltip>span{
     font-size: .9rem;

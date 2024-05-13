@@ -100,7 +100,18 @@
     background:  rgb(1, 161, 224);;
     border: 1px solid rgb(1, 161, 224);
 }
+@media(max-width:768px){
+    .ModalContact{
+        backdrop-filter: blur(5px);
+    }
+}
 @media(max-width:426px){
+    .contact{
+        background-color: #111;
+    }
+    .ModalContact{
+        backdrop-filter: blur(5px);
+    }
     .heading>h1{
         font-size: 1.1rem;
     }
@@ -125,7 +136,7 @@
     }
     .contact{
         padding: 1rem 3rem;
-        left:50%;
+        left:47%;
     }
 }
 @media(max-width:376px){
@@ -153,7 +164,7 @@
     }
     .contact{
         padding: 1rem 3rem;
-        left: 50%;
+        left: 47%;
     }
 }
 @media(max-width:321px){

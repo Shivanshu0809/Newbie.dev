@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+
+.Modal{
+    backdrop-filter:blur(50px);
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 500;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    padding: 2.5rem 1rem;
+
+/* backdrop-filter: radius(10px); */
+}
+.ownerModal{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    backdrop-filter:blur(50px);
+    background-color: rgba(0, 0, 0, 0.648);
+    padding: 2.5rem 1rem;
+    padding-top: 1rem;
+    position: absolute;
+    /* height: 50%; */
+    width: 50%;
+    left: 50%;
+    top: 12%;
+    transform: translate(-50%);
+    justify-content: center;
+    z-index: 500;
+position: fixed;
+border-radius: 20px;
+transition: all 1s ease-in-out;
+
+}
+.ownerModal>p{
+    font-size: .95rem;
+    line-height: 23px;
+    width: 80%;
+}
+.ownerModal>.languages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+   
+}
+.Modal>h3{
+    font-size: 1.2rem;
+}
+.Modal>div>img{
+    width: 220px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 1px solid #ffffff66;
+    user-select: none;
+    /* box-shadow: 0px 0px 20px 1px  rgb(46, 59, 76); */
+}
+.languages>span{
+    background-color: rgb(51, 50, 50);
+    padding: .2rem .7rem ;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+
+    
+}
+.languages>span:hover{
+    background-color: #2daec593;
+    color: #fff;
+    cursor:not-allowed;
+}
+.ownerModal>span{
+    
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+    padding: .0rem .45rem;
+    color: #fffefe;
+    font-size: 1rem;
+    align-self: flex-end;
+    border: 1px solid #fff;
+ cursor: pointer;   
+ font-weight: 500;
+}
+.ownerModal>span:hover{
+   background-color: #ffffff8a;
+   color: #111;
+   font-weight: 700;
+}
+@media(max-width:768px){
+   
+    .ownerModal{
+        width: 80%;
+        padding-top: .3rem;
+    
+    }
+    .Modal>h3{
+    font-size: 1.2rem;
+}
+.Modal>div>img{
+    width: 150px;
+
+}
+.languages>span{
+    font-size: .8rem;
+}
+}
+@media(max-width:426px){
+    .ownerModal{
+        width: 75%;
+        padding: .5rem;
+        top: 10%;
+        left: 48%;
+    }
+    .Modal>h3{
+        font-size: .8rem;
+    }
+    .Modal>div>img{
+        width: 100px;
+    
+    }
+    .ownerModal>p{
+        font-size: .8rem;
+        padding:0rem;
+        line-height: 20px;
+        text-align: left;
+    }
+    .languages{
+        align-items: center;
+        justify-content: center;
+    }
+    .languages>span{
+        font-size: .7rem;
+    }
+
+
+}
+@media(max-width:376px){
+    .ownerModal{
+        padding: .8rem;
+    }
+    .ownerModal>p{
+        font-size: .7rem;
+        padding:0rem;
+        line-height: 16px;
+        text-align: center;
+    }
+}
+@media(max-width:321px){
+    .ownerModal{
+        left: 46%;
+    }
+}

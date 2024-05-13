@@ -1,0 +1,853 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  
+}
+body{
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  color: whitesmoke;
+  overflow-x:hidden ;
+  
+}
+.ToToparrow{
+  position: fixed;
+  right: 1%;
+  bottom: 3%;
+  font-size: 2rem;
+  background-color: #fcf5f575;
+  backdrop-filter: blur(50px);
+  padding: 0rem .6rem;
+  border-radius: 100%;
+  z-index: 1000;
+  display: block;
+
+}
+.ToToparrow:active{
+  scale: .89;
+}
+.ToToparrow>i{
+  color: #3e4142;
+  font-weight: lighter;
+}
+.NavBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 800;
+  background-color: rgba(23, 22, 22, 0.492);
+  backdrop-filter: blur(50px);
+}
+.hamburger{
+  display: none;
+}
+.hamburger>a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+
+}
+/*something doing here*/
+
+.LftPrtNav{
+  color: rgb(222, 206, 206);
+  text-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+.LftPrtNav>h2{
+  font-size: 2rem;
+}
+.RytPrtNav{
+  display: flex;position: relative;
+  gap: 40px;  
+  /* height: 30px; */
+
+
+}
+
+
+.RytPrtNav>a{
+  text-decoration: none;
+  color: rgb(188, 184, 184);
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  padding: .1rem .5rem;
+  transition: all .2s ease-in-out;
+
+ 
+}
+
+.RytPrtNav>a:hover{
+  background-color: #b3aaaa;
+  padding: .1rem .5rem;
+  border-radius: 50px;
+ color: black;
+}
+
+.HeroSection{
+  margin-bottom: 3%;
+}
+.HeroHeading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  gap: 10px;
+}
+.HeroHeading>h1{
+  color: rgb(8, 170, 170);
+  text-shadow: 0px 0px 5px rgb(210, 7, 213);
+}
+.HeroHeading>p{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: whitesmoke;
+}
+.Cards{
+padding: 1rem 3rem;
+display: flex;
+flex-wrap: wrap;
+gap: 60px;
+justify-content: center;
+position: relative;
+margin-top: 5%;
+
+}
+
+
+.card{
+  background-color:rgb(41, 39, 39);
+  width: 400px;
+  height: 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 2.275);
+ position: relative;
+ 
+}
+
+.CardTooltip{
+  /* width: 70px; */
+  padding: 0.1rem .5rem;
+  background-color: #30960f;
+  height: 30px;
+  position: absolute;
+  text-align: center;
+  align-items:center;
+  top: 50%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  z-index: -1;
+  transform: translateX(-50%);
+  scale: 0;
+  transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-size: 1.2rem;
+  border-radius: 2px;
+
+}
+
+.card:hover .CardTooltip{
+  top: -20%;
+  scale: 1.1;
+  z-index: 1;
+}
+.CardTooltip>.tip{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #30960f;
+  left: 50%;
+  top: 50%;
+  align-items: center;
+  transform: translateX(-50%);
+  transform: rotate(50deg);
+  z-index:-1;
+}
+.tooltipboat,.tooltipboat>.tip{
+  background-color: rgb(179, 44, 44);
+}
+
+.tooltipcodecards,.tooltipcodecards>.tip{
+  background-color: rgb(69, 72, 75);
+  color: rgb(255, 255, 255);
+}
+
+.tooltiphydra,.tooltiphydra>.tip{
+  background-color: #5f396e;
+}
+
+.tooltipapple,.tooltipapple>.tip{
+  background-color: #9f824e;
+
+}
+
+.tooltipsnap,.tooltipsnap>.tip{
+  background-color: rgb(244, 244, 22);
+  color: black;
+}
+
+.tooltipwag,.tooltipwag>.tip{
+  background-color: rgb(31, 137, 68);
+}
+.tooltipoxygen,.tooltipoxygen>.tip{
+  background-color:rgb(193, 229, 238);
+  color: black;
+}
+.tooltipcycle,.tooltipcycle>.tip{
+  background-color: rgb(134, 126, 126);
+}
+.tooltipdesignA,.tooltipdesignA>.tip{
+  background-color: rgb(94, 153, 133);
+ 
+}
+.tooltipLeaf,.tooltipLeaf>.tip{
+  background-color: rgb(16, 109, 139);
+}
+.tooltipAirFly,.tooltipAirFly>.tip{
+  background-color: #9f824e;
+}
+.tooltipX,.tooltipX>.tip{
+  background-color: black;
+
+}
+.tooltipKurtis,.tooltipKurtis>.tip{
+  background-color: rgb(16, 84, 133);
+}
+
+
+.card>img{
+width: inherit;
+height: inherit;
+position: relative;
+z-index: 50;
+
+
+}
+.card::after{
+  content: '';
+  height: 0%;
+  width: 100%;
+  background-color: rgba(16, 15, 15, 0.751);
+  /* display: block; */
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  filter: blur(5px);
+  transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+}
+.card:hover::after{
+  height: 100%;
+}
+.card:hover{
+  box-shadow: 5px 5px 5px rgba(245, 245, 245, 0.56);
+}
+
+.links{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 120;
+  gap: 60px;
+  transform: translateX(-50%);
+  transition: all .15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  scale: 0;
+
+}
+.card:hover .links{
+ scale: 1;
+}
+.links>div>a>.fa{
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+.link>a:hover>.fa{
+  color: green;
+}
+.connect>a{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.tooltip{
+  width: 60px;
+  background-color: #ffffff;
+  height: 25px;
+  /* padding: 0rem .5rem; */
+  position: absolute;
+  text-align: center;
+  top: 0%;
+  scale: 0;
+  
+  color: black;
+  z-index: -1;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+}
+.tooltip>.tip{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  left: 30%;
+  top: 30%;
+  align-items: center;
+  transform: translateX(-50%);
+  transform: rotate(50deg);
+  z-index:-1;
+}
+.Livetooltip{
+  background-color: green;
+  color: #ffffff;
+font-weight: 500;
+}
+.Livetooltip>.tip{
+  background-color: green;
+}
+.connect:hover .tooltip{
+  top: -100%;
+  scale: 1;
+
+}
+.Owner{
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+  
+.sec2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  padding-bottom: 2rem;
+  gap: 50px;
+  margin-bottom: 5%;
+}
+.sec2>h1{
+  font-size: 3rem;
+  font-weight: 600;
+}
+.sec2>.card{
+  margin-top: 5%;
+  width: 500px;
+  height: 100%;
+ 
+  
+}
+.elfttool{
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  background-color: #ffffffb3;
+  color: black;
+  padding: 1rem ;
+  width: 50%;
+  border-radius: 5px;
+  z-index: -1;
+  transition: all .5s ease-in-out;
+
+}
+.card:hover .elfttool{
+  left: -70%;
+}
+.elfttool>hr{
+  position: absolute;
+  width: 50%;
+  left: 100%;
+  top: 50%;
+  z-index: -1;
+}
+.eryttool{
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  width: 50%;
+  background-color: #ffffffb3;
+  color: rgb(0, 0, 0);
+  padding: 1rem ;
+  border-radius: 5px;
+  backdrop-filter: blur(50px);
+  z-index: -1;
+  transition: all .5s ease-in-out;
+  
+}
+.eryttool>hr{
+  position: absolute;
+  width: 50%;
+  left: -50%;
+  top: 50%;
+  z-index: -1;
+}
+.card:hover .eryttool{
+  right: -70%;
+}
+
+.sec3{
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  flex-direction: column;
+}
+.sec3head{
+  border: 1px solid #ffffff67;
+  padding: 5rem;
+  text-align: center;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+/* background-color: #00000024;
+backdrop-filter: blur(50px); */
+
+
+}
+.sec3head>h1{
+  font-size: 5rem;
+}
+.sec3head>h2{
+  font-size: 2rem;
+}
+
+footer{
+  padding: 2rem 5rem;
+  border: 1px solid #918c8c9a;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+
+
+}
+
+.ftsec{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+}
+.ftlogo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.ftlogo>h2{
+  font-size: 1.8rem;
+  color: rgb(222, 206, 206);
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.66);
+user-select: none;
+}
+.ftlogo>a{
+  text-decoration: none;
+  color: #d2c128;
+  
+}
+.line{
+  width: 0px;
+  height: 1px;
+  background-color: #fff;
+  transition: all .4s ease-in-out;
+}
+.ftlogo>a:hover .line{
+  width: 30px;
+  background-color: yellow;
+
+}
+
+.shortcut{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.Menu{
+  display: flex;
+  gap: 30px; 
+}
+.Menu>a{
+  text-decoration: none;
+  color: #ffffffb2;
+  cursor: pointer;
+}
+.Menu>a:hover{
+  color: skyblue;
+}
+.Menu>a:hover .line{
+  width: 30px;
+  background-color:  skyblue;;
+}
+.socialMedia{
+  display: flex;
+gap: 30px;
+align-items: center;
+}
+.socialMedia>a{
+  font-size: 2rem;
+  color: #ffffffaf;
+  cursor:pointer;
+
+}
+.socialMedia>a .fa-linkedin:hover{
+  color: rgb(0, 110, 255);
+}
+.socialMedia>a .fa-twitter:hover{
+  color: rgb(12, 177, 242);
+}
+.Copyright{
+  color: #ffffff80;
+  user-select: none;
+}
+@media(max-width:768px){
+
+  .NavBar{
+    padding: 1rem 2rem;
+  }
+  /* .Mobilenavigation{
+    display: flex;
+    
+  }
+   */
+  .hamburger{
+    display: block;
+  }
+  .hamburger>a{
+    font-size: 1.5rem;
+  }
+  
+  .RytPrtNav{
+    display:none;
+  }
+  .Cards{
+    gap: 80px;
+    
+  
+
+  }
+  .card{
+    width: 100%;
+    height: 100%;
+  }
+  .sec2{
+    gap: 200px;
+    margin-bottom: 21%;
+  
+  }
+  .sec2>.card{
+    margin-top: 0;
+
+  }
+  .elfttool{
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    font-size: .8rem;
+    scale: 0;
+  }
+  .card:hover .elfttool{
+    top: 110%;
+    left: -12%;
+    scale: 1;
+  }
+  .elfttool>hr{
+    position: absolute;
+    width: 10%;
+    left: 40%;
+    top: 0%;
+    rotate: 90deg;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+  .eryttool{
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    width: 50%;
+   font-size: .8rem;
+    z-index: -1;
+    transition: all .8s ease-in-out;
+    scale: 0;
+    
+  }
+  .eryttool>hr{
+    position: absolute;
+    width: 10%;
+    left: 50%;
+    top: 0%;
+    rotate: 90deg;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  .card:hover .eryttool{
+    top: 110%;
+    right:-5%;
+    scale: 1;
+  }
+  footer{
+    padding: 1rem 3rem;
+  }
+  .ftsec{
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .sec3head>h1{
+    font-size: 3rem;
+  }
+  .sec3head>h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .ftlogo>h2{
+    font-size: 1.7rem
+  }
+  .Menu>a{
+    font-size: .9rem;
+  }
+  .socialMedia>a{
+    font-size: 1.5rem;
+  }
+  .Copyright{
+    font-size: .8rem;
+  }
+}
+@media(max-width:426px){
+  .hamburger>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+  
+  }
+  .NavBar{
+    padding: .6rem 1rem;
+  }
+  /* .Mobilenavigation{
+    display: flex;
+    top: 9%;
+    
+  } */
+  /* .Mobilenavigation>.MobNavbar{
+    flex-direction: column;
+  } */
+
+  .LftPrtNav>h2{
+    font-size: 1.6rem;
+  }
+  .HeroHeading>h1{
+    font-size: 1.5rem;
+  }
+  .HeroHeading>p{
+    font-size: 1rem;
+  }
+  .card{
+    width: 100%;
+    height: 100%;
+  }
+  .sec2{
+    padding: 0rem 2rem;
+    gap: 80px;
+    margin-top: 8%;
+  }
+  .sec2>h1{
+    font-size: 2rem;
+  }
+  .sec2>.card{
+    margin-top: 0;
+    width: 100%;
+    height:100%;
+    backdrop-filter: blur(50px);
+   
+
+  }
+  .elfttool{
+    margin-left: 10%;
+    /* top: 30%; */
+    /* margin-top: 15%; */
+    font-size: .8rem;
+    scale: 0;
+    position: relative; top: 110%;
+    left: -10%;
+    scale: 1;
+    z-index: 1;
+    width: 90%;
+  }
+  .card:hover .elfttool{
+    display: none;
+  }
+  .eryttool{
+    display: none;
+  }
+  .CardTooltip>span{
+    font-size: .9rem;
+  }
+  .card:hover .CardTooltip{
+    top: -25%;
+    scale: 1.1;
+  }
+  .sec3head{
+    padding: 3rem .8rem;
+  }
+  .sec3head>h1{
+    font-size: 2.3rem;
+
+  }
+  .sec3head>h2{
+    font-size: 1rem;
+  }
+footer{
+  gap: 5px;
+}
+  .ftsec{
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .ftlogo{
+    gap: 10px;
+  }
+  .ftlogo>h2{
+    font-size: 1.5rem
+  }
+  .ftlogo>a{
+    font-size: .9rem;
+  }
+  .Menu>a{
+    font-size: .8rem;
+  }
+  .ToToparrow{
+    font-size: 1.2rem;
+    padding: .2rem .5rem ;
+  }
+}
+@media(max-width:376px){
+  .NavBar{
+    padding: .5rem 1rem;
+  }
+  .LftPrtNav>h2{
+    font-size: 1.5rem;
+  }
+  .HeroHeading{
+    margin-top: 6%;
+  }
+  .HeroHeading>h1{
+    font-size: 1.3rem;
+  }
+  .HeroHeading>p{
+    font-size: .8rem;
+  }
+  .Cards{
+    padding: .8rem;
+  }
+  .CardTooltip{
+    padding: 0rem .5rem;
+  }
+  .CardTooltip>span{
+    font-size: .8rem;
+  }
+  .sec2>h1{
+    font-size: 1.5rem;
+  }
+  .sec3head{
+    padding: 2rem 1rem;
+  }
+  .sec3head>h1{
+    font-size: 2rem;
+
+  }
+  .sec3head>h2{
+    font-size: .9rem;
+  }
+  footer{
+    padding: .5rem .2rem;
+  }
+  .ftsec{
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .shortcut{
+    gap: 10px;
+  }
+  .ftlogo{
+    gap: 10px;
+  }
+  .ftlogo>h2{
+    font-size: 1.5rem
+  }
+  .ftlogo>a{
+    font-size: .9rem;
+  }
+  .Menu>a{
+    font-size: .8rem;
+  }
+  .ToToparrow{
+    font-size: 1.2rem;
+    padding: .2rem .5rem ;
+  }
+}
+@media(max-width:321px) {
+  .hamburger>a{
+    font-size: 1.2rem;  
+  }
+  .LftPrtNav>h2{
+    font-size: 1.3rem;
+  }
+  .CardTooltip{
+    padding: 0rem .4rem;
+   
+  }
+  .CardTooltip>span{
+    font-size: .7rem;
+  }
+  .sec3head{
+    padding: 2rem 1.2rem;
+  }
+  .sec3head>h1{
+    font-size: 1.5rem;
+
+  }
+  .sec3head>h2{
+    font-size: .7rem;
+  }
+  .shortcut{
+    gap: 5px;
+  }
+  .ftlogo{
+    gap: 5px;
+  }
+  .ftlogo>h2{
+    font-size: 1.2rem
+  }
+  .ftlogo>a{
+    font-size: .8rem;
+  }
+  .Menu>a{
+    font-size: .7rem;
+  }
+  .socialMedia>a{
+    font-size: 1.3rem;
+  }
+  .Copyright{
+    font-size: .7rem;
+  }
+  .ToToparrow{
+    font-size: 1.2rem;
+    padding: .2rem .5rem ;
+  }
+  
+}
